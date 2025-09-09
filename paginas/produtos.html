@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/produtos.css">
+    <title>Produtos</title>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" style="text-decoration: none; color: black;">
+            <h1>🐶LaikaShop😺</h1>
+            <P>O melhor espaço para o seu pet</P>
+        </a>
+    </header>
+
+    <nav class="navegacao">
+        <a href="home.html" class="navegacao-botao">Início</a>
+        <!--<a href="" class="navegacao-botao">Serviços</a>-->
+        <a href="produtos-login-on.html" class="navegacao-botao">Produtos</a>
+        <a href="cadastro-pet.html" class="navegacao-botao">Cadastre seu pet</a>
+        <a href="../../index.html" class="navegacao-botao">Sair</a>
+    </nav>
+
+    <main>
+        <div class="tabelas">
+            <h2 class="estoque">Produtos em nosso estoque</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="codigo-produto">Código</th>
+                        <th class="img-produto">Produto</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>135</td>
+                        <td><img src="../assets/image/cachorro-filhote" alt="racao-cachorro-filhote" width="150"></td>
+                        <td>Ração de 15,0kg para cães filhotes.
+                            <br>
+                            <br>
+                            <br>
+                        </td>
+                        <td class="valor">R$ 190,90</td>
+                        <td class="quantidade">
+                            <button class="btn-quantidade" id="btnMenosDF" onclick="menosRacaoDogFilhote()">◄</button>
+                            <p id="racaoDogFilhote">0</p>
+                            <button class="btn-quantidade" id="btnMaisDF" onclick="maisRacaoDogFilhote()">►</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>175</td>
+                        <td><img src="../assets/image/cachorro-adulto.webp" alt="racao-cachorro-adulto" width="150">
+                        </td>
+                        <td>Ração de 15,0kg para cães adultos.
+                            <br>
+                            <br>
+                            <br>
+                        </td>
+                        <td class="valor">R$ 179,90</td>
+                        <td class="quantidade">
+                            <button class="btn-quantidade" id="btnMenosDA" onclick="menosRacaoDogAdulto()">◄</button>
+                            <p id="racaoDogAdulto">0</p>
+                            <button class="btn-quantidade" id="btnMaisDA" onclick="maisRacaoDogAdulto()">►</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>265</td>
+                        <td><img src="../assets/image/gato-filhote.jpg" alt="racao-gato-filhote" width="150"></td>
+                        <td>Ração de 10,1kg para gatos filhotes.
+                            <br>
+                            <br>
+                            <br>
+                        </td>
+                        <td class="valor">R$ 139,90</td>
+                        <td class="quantidade">
+                            <button class="btn-quantidade" onclick="menosRacaoCatFilhote()">◄</button>
+                            <p id="racaoCatFilhote">0</p>
+                            <button class="btn-quantidade" onclick="maisRacaoCatFilhote()">►</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>285</td>
+                        <td><img src="../assets/image/gato-adulto.jpg" alt="racao-gato-adulto" width="150"></td>
+                        <td>Ração de 10,1kg para gatos adultos
+                            <br>
+                            <br>
+                            <br>
+                        </td>
+                        <td class="valor">R$ 119,90</td>
+                        <td class="quantidade">
+                            <button class="btn-quantidade" onclick="menosRacaoCatAdulto()">◄</button>
+                            <p id="racaoCatAdulto">0</p>
+                            <button class="btn-quantidade" onclick="maisRacaoCatAdulto()">►</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="botao-comprar" onclick="chamarCarrinho()">Carrinho</button>
+        </div>
+        <div class="carrinho" id="carrinho">
+            <h2>Carrinho</h2>
+            <script src="../assets/js/produtos.js"></script>
+
+
+        </div>
+    </main>
+    <footer>
+        <p>🐶LaikaShop😺 - Criado por Felipe Fernando Corrêa</p>
+    </footer>
+
+</body>
+
+</html>
