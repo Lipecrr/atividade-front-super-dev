@@ -14,5 +14,5 @@ function login()  {
 }
 
 function logar() {
-    window.location.href = "paginas/home.html"; 
+    window.location.href = "paginas/produtos.html"; 
 }
